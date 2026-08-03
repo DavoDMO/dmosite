@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Yeseva One', cursive;
+}
+.header {
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-image: url('../images/logos/DMO-Thin-NC.png');
+    background-size: 500px 500px;
+    background-position: left;
+    background-color: #5b5b5b;
+    position: relative;
+}

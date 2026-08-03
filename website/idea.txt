@@ -1,0 +1,3 @@
+Page can constantly have a subtle visualiser round the edge that always moves to the music video playing on home page, which auto plays when homepage opened
+
+Background will be FL Project of latest song. It should sync with the music video of that tune on the homepage, so when music video is paused the background FL video is paused. Wherever music video is rewound to, background FL video is also rewound to
