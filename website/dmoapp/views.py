@@ -5,3 +5,7 @@ from django.template import loader
 def dmoapp(request):
     template = loader.get_template('main.html')
     return HttpResponse(template.render())
+
+def tunes(request):
+    template = loader.get_template('tunes.html')
+    return HttpResponse(template.render())
