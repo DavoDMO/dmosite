@@ -1,14 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+    {% load static %}
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UFT-8">
         <title>DMOProductions.co.uk</title>
         {% load static %}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
     </head>
     <body>
-        <div class="header">
-            
-        </div>
+
+        <header>
+
+            <div class="container">
+
+                <section class="top-bar">
+                    {% load static %}
+
+                    <div class="logo-group">
+                        <img src="{% static 'images/logos/DMO-2.png' %}" alt="DMO logo" width="75">
+                        <h1>DMOProductions.co.uk</h1>
+                    </div>
+
+                    <nav class="nav-links">
+                        <a href="home">Home</a>
+                        <a href="#">Tunes</a>
+                        <a href="#">Riddims</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Contact Us</a>
+                    </nav>
+
+                </section>
+
+            </div>
+
+        </header>
+
+        <section class="hero">
+            <div class="container">
+                <div class="hero-header">
+                    <h1>Test line</h1>
+                    <p>Official website of DMOProductions</p>
+                    <button>Click me</button>
+                </div>
+            </div>
+        </section>
+
     </body>
+    
 </html>
