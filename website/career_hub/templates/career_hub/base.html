@@ -23,13 +23,9 @@
                     </div>
                     <nav class="nav-links">
                         <a href="{% url 'career_hub:home' %}" class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}">Home</a> <!-- request.resolver.match.url_name stores info about the view handling current request and marks it as 'active' -->
-                        <a href="{% url 'career_hub:portfolio' %}" class="{% if request.resolver_match.url_name == 'portfolio' %}active{% endif %}">Portfolio</a>
-                        <a href="{% url 'career_hub:cv' %}" class="{% if request.resolver_match.url_name == 'cv' %}active{% endif %}">CV</a>
                         <a href="{% url 'career_hub:projects' %}" class="{% if request.resolver_match.url_name == 'projects' %}active{% endif %}">Projects</a>
-                        <a href="{% url 'career_hub:personalstatement' %}" class="{% if request.resolver_match.url_name == 'personalstatement' %}active{% endif %}">Personal Statement</a>
-                        <a href="{% url 'career_hub:education' %}" class="{% if request.resolver_match.url_name == 'education' %}active{% endif %}">Education</a>
-                        <a href="{% url 'career_hub:experience' %}" class="{% if request.resolver_match.url_name == 'experience' %}active{% endif %}">Experience</a>
-                        <a href="{% url 'career_hub:skills' %}" class="{% if request.resolver_match.url_name == 'skills' %}active{% endif %}">Skills</a>
+                        <a href="{% url 'career_hub:cv' %}" class="{% if request.resolver_match.url_name == 'cv' %}active{% endif %}">CV</a>
+                        <a href="{% url 'career_hub:about' %}" class="{% if request.resolver_match.url_name == 'about' %}active{% endif %}">About</a>
                     </nav>
                 </section>
             </div>
