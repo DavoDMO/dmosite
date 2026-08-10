@@ -1,10 +1,15 @@
-<DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
+
+    {% load static %}
     <head>
-        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{% block title %}Career Hub{% endblock %}</title>
+        <meta charset="UFT-8">
+        <title>DMOProductions.co.uk</title>
         {% load static %}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'career_hub/css/style.css' %}">
     </head>
     <body>
@@ -17,19 +22,22 @@
                         <h1>DMOProductions.co.uk</h1>
                     </div>
                     <nav class="nav-links">
-                        <a href="{% url 'career_hub:home' %}" class="active">Home</a>
-                        <a href="{% url 'career_hub:portfolio' %}">Portfolio</a>
-                        <a href="{% url 'career_hub:cv' %}">CV</a>
-                        <a href="{% url 'career_hub:projects' %}">Projects</a>
-                        <a href="{% url 'career_hub:personalstatement' %}" class="active">Personal Statement</a>
-                        <a href="{% url 'career_hub:education' %}" class="active">Education</a>
-                        <a href="{% url 'career_hub:experience' %}" class="active">Experience</a>
-                        <a href="{% url 'career_hub:skills' %}" class="active">Skills</a>
+                        <a href="{% url 'career_hub:home' %}" class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}">Home</a> <!-- request.resolver.match.url_name stores info about the view handling current request and marks it as 'active' -->
+                        <a href="{% url 'career_hub:portfolio' %}" class="{% if request.resolver_match.url_name == 'portfolio' %}active{% endif %}">Portfolio</a>
+                        <a href="{% url 'career_hub:cv' %}" class="{% if request.resolver_match.url_name == 'cv' %}active{% endif %}">CV</a>
+                        <a href="{% url 'career_hub:projects' %}" class="{% if request.resolver_match.url_name == 'projects' %}active{% endif %}">Projects</a>
+                        <a href="{% url 'career_hub:personalstatement' %}" class="{% if request.resolver_match.url_name == 'personalstatement' %}active{% endif %}">Personal Statement</a>
+                        <a href="{% url 'career_hub:education' %}" class="{% if request.resolver_match.url_name == 'education' %}active{% endif %}">Education</a>
+                        <a href="{% url 'career_hub:experience' %}" class="{% if request.resolver_match.url_name == 'experience' %}active{% endif %}">Experience</a>
+                        <a href="{% url 'career_hub:skills' %}" class="{% if request.resolver_match.url_name == 'skills' %}active{% endif %}">Skills</a>
                     </nav>
-                    <main class="content">
-                        {% block content %}{% endblock %}
-                    </main>
                 </section>
             </div>
         </header>
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
     </body>
+    
+</html>
