@@ -53,8 +53,6 @@ header {
 
 .hero {
     background-color: #5b5b5b;
-    background-image: url('../images/background/fl-image-temp.png');
-    background-size: cover;
     padding: 0;
 }
 
