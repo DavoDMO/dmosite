@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
-    path('', include('dmoapp.urls')),
     path('admin/', admin.site.urls),
+    path('', include('dmoapp.urls')), # DMOApp URLs for main webpage
+    path('career_hub/', include('career_hub.urls', namespace='career_hub')), # Career Hub URLs for career hub webpage
 ]

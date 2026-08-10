@@ -28,7 +28,7 @@ body, html {
 /* Desktop Styles */
 @media only screen and (min-width: 1200px) {
     .container{
-        width: 1500px;
+        width: 1900px;
     }
 }
 
@@ -41,7 +41,7 @@ header {
 }
 
 .top-bar {
-    height: 80px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: flex-start;

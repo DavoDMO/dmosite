@@ -10,22 +10,17 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'dmoapp/css/style.css' %}">
     </head>
     <body>
-
         <header>
-
             <div class="container">
-
                 <section class="top-bar">
                     {% load static %}
-
                     <div class="logo-group">
-                        <img src="{% static 'images/logos/DMO-2.png' %}" alt="DMO logo" width="75">
+                        <img src="{% static 'dmoapp/images/logos/DMO-2.png' %}" alt="DMO logo" width="75">
                         <h1>DMOProductions.co.uk</h1>
                     </div>
-
                     <nav class="nav-links">
                         <a href="{% url 'dmoapp' %}" class="active">Home</a>
                         <a href="{% url 'tunes' %}">Tunes</a>
@@ -33,13 +28,9 @@
                         <a href="#">About Us</a>
                         <a href="#">Contact Us</a>
                     </nav>
-
                 </section>
-
             </div>
-
         </header>
-
         <section class="hero">
             <div class="container">
                 <div class="hero-header">

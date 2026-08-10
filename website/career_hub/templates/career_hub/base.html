@@ -1,0 +1,35 @@
+<DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}Career Hub{% endblock %}</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'career_hub/css/style.css' %}">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <section class="top-bar">
+                    {% load static %}
+                    <div class="logo-group">
+                        <img src="{% static 'career_hub/images/logos/DMO-2.png' %}" alt="DMO logo" width="75">
+                        <h1>DMOProductions.co.uk</h1>
+                    </div>
+                    <nav class="nav-links">
+                        <a href="{% url 'career_hub:home' %}" class="active">Home</a>
+                        <a href="{% url 'career_hub:portfolio' %}">Portfolio</a>
+                        <a href="{% url 'career_hub:cv' %}">CV</a>
+                        <a href="{% url 'career_hub:projects' %}">Projects</a>
+                        <a href="{% url 'career_hub:personalstatement' %}" class="active">Personal Statement</a>
+                        <a href="{% url 'career_hub:education' %}" class="active">Education</a>
+                        <a href="{% url 'career_hub:experience' %}" class="active">Experience</a>
+                        <a href="{% url 'career_hub:skills' %}" class="active">Skills</a>
+                    </nav>
+                    <main class="content">
+                        {% block content %}{% endblock %}
+                    </main>
+                </section>
+            </div>
+        </header>
+    </body>

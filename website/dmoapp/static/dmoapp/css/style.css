@@ -1,0 +1,109 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', cursive;
+}
+
+.container {
+    width: 92%;
+    margin: auto;
+}
+
+
+/* Tablet Styles */
+@media only screen and (min-width: 576px) {
+    .container{
+        width: 540px;
+    }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1200px) {
+    .container{
+        width: 1900px;
+    }
+}
+
+header {
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.top-bar {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.top-bar menu{
+    background-color: #5b5b5b;
+}
+
+.hero {
+    background-color: #5b5b5b;
+    background-image: url('../images/background/fl-image-temp.png');
+    background-size: cover;
+    padding: 0;
+}
+
+.hero h1 {
+    margin-top: 0;
+    text-align: left;
+}
+
+
+.hero-header {
+    width: 100%;
+    padding: 100px;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top left;
+    position: relative;
+    color: white;
+}
+
+.logo-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-links {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    gap: 25px;
+    margin-left: 50px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+}
+
+.nav-links a:hover {
+    border-bottom: 3px solid red;
+}
+
+.nav-links a:active {
+    border-bottom: 3px solid red;
+}
