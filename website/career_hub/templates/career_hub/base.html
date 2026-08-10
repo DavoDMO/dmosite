@@ -21,12 +21,6 @@
                         <img src="{% static 'career_hub/images/logos/DMO-2.png' %}" alt="DMO logo" width="75">
                         <h1>DMOProductions.co.uk</h1>
                     </div>
-                    <nav class="nav-links">
-                        <a href="{% url 'career_hub:home' %}" class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}">Home</a> <!-- request.resolver.match.url_name stores info about the view handling current request and marks it as 'active' -->
-                        <a href="{% url 'career_hub:projects' %}" class="{% if request.resolver_match.url_name == 'projects' %}active{% endif %}">Projects</a>
-                        <a href="{% url 'career_hub:cv' %}" class="{% if request.resolver_match.url_name == 'cv' %}active{% endif %}">CV</a>
-                        <a href="{% url 'career_hub:about' %}" class="{% if request.resolver_match.url_name == 'about' %}active{% endif %}">About</a>
-                    </nav>
                 </section>
             </div>
         </header>
