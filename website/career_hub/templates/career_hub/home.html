@@ -46,8 +46,9 @@
                     <br>
                     <br>
                     <h2>If you find portfolios interesting:</h2>
-                    <button style="background-color: #aa875e;
-                        width: 20%;
+                    <a href="{% url 'career_hub:projects' %}"
+                        class="button"
+                        style="background-color: #aa875e;
                         border: none;
                         color: #4f1f23;
                         padding: 15px 15px;
@@ -56,13 +57,20 @@
                         display: inline-block;
                         font-size: 16px;
                         margin: 4px 2px;
-                        cursor: pointer;" onclick="window.location.href='{% url 'career_hub:projects' %}'">
+                        cursor: pointer;">
                         See the result of my keyboard typing
-                    </button>
+                    </a>
+                    
+
+                    
+                    
+
                     <br>
                     <br>
                     <h2>Or if PDF files with a French name are more up your alley:</h2>
-                    <button style="background-color: #aa875e;
+                    <a href="{% url 'career_hub:cv' %}"
+                        class="button"
+                        style="background-color: #aa875e;
                         border: none;
                         color: #4f1f23;
                         padding: 15px 15px;
@@ -71,10 +79,9 @@
                         display: inline-block;
                         font-size: 16px;
                         margin: 4px 2px;
-                        cursor: pointer;" onclick="window.location.href='{% url 'career_hub:cv' %}'">
+                        cursor: pointer;">
                         See the my <i><b>curriculum vitae</b></i> or <i><b>CV</b></i> in normal person language
-                    </button>
-                    <p></p>
+                    </a>
 
                 </div>
             </div>
