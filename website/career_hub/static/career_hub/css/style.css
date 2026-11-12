@@ -169,7 +169,7 @@ header {
     gap: 0px;
 }
 
-.project-container div {
+.project-container .project-info {
     background-color: #707070;
     border-radius: 20px;
     padding: 10px;
@@ -177,10 +177,16 @@ header {
     text-align: left;
 }
 
-.project-container img {
-    width: auto;
+.project-container .project-image {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-container .project-image img {
+    width: 100%;
     height: auto;
-    padding: 0px 0px 0px 70px;
+    object-fit: contain;
 }
 
 .project-container h2 {
