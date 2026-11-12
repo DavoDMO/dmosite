@@ -18,13 +18,16 @@
             <div class="project-container">
                 <div>
                     <h2>{{ project.title }}</h2>
-                    <p>{{ project.description }}</p>
 
                     {% if project.image %}
                         <img src="{{ project.image.url }}" alt="{{ project.title }}">
                     {% endif %}
 
-                    <p>Technology: {{ project.technology }}</p>
+                    <p>{{ project.description }}</p>
+
+
+
+                    <p><b>Technology:</b> {{ project.technology }}</p>
 
                     {% if project.project_url %}
                         <a href="{{ project.project_url }}" target="_blank">
@@ -32,15 +35,6 @@
                         </a>
                     {% endif %}
                 </div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-                <div>5</div>
-            </div>
-
-
-            <div class="project-card">
-
             </div>
 
             {% empty %}

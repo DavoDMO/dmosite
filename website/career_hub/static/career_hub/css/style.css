@@ -55,7 +55,7 @@ header {
     background-color: #5b5b5b;
     background-size: cover;
     min-height: 300px;
-    padding: 40px 0;
+    padding: 0 0 0 0;
 }
 
 .hero h1 {
@@ -145,7 +145,7 @@ header {
 
 .projects {
     background-color: #4f1f23;
-    padding: 40px 0;
+    padding: 30px 30px;
 }
 
 .projects .container {
@@ -155,10 +155,12 @@ header {
 
 .project-container {
     display: grid;
-    grid-template-columns: 500px auto auto;
+    grid-template-columns: auto auto auto;
+    justify-content: start;
+    width: fit-content;
     background-color: #757575;
     padding: 10px;
-    gap: 5px;
+    gap: 0px;
 }
 
 .project-container div {
@@ -166,4 +168,9 @@ header {
     padding: 10px;
     font-size: 30px;
     text-align: center;
+}
+
+.project-container img {
+    width: 80%;
+    height: auto;
 }
