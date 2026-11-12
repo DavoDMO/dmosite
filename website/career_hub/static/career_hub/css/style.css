@@ -149,7 +149,7 @@ header {
 }
 
 .projects {
-    background-color: #4f1f23;
+    background-color: #5b5b5b;
     padding: 30px 30px;
 }
 
@@ -160,26 +160,27 @@ header {
 
 .project-container {
     display: grid;
-    border-radius: 10px;
+    border-radius: 20px;
     grid-template-columns: auto auto auto;
     justify-content: start;
     width: fit-content;
-    background-color: #757575;
+    background-color: #707070;
     padding: 10px;
     gap: 0px;
 }
 
 .project-container div {
-    background-color: #f1f1f1;
-    border-radius: 10px;
+    background-color: #707070;
+    border-radius: 20px;
     padding: 10px;
     font-size: 30px;
-    text-align: center;
+    text-align: left;
 }
 
 .project-container img {
-    width: 80%;
+    width: auto;
     height: auto;
+    padding: 0px 0px 0px 70px;
 }
 
 .project-container h2 {
