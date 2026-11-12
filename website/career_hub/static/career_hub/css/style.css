@@ -54,7 +54,8 @@ header {
 .hero {
     background-color: #5b5b5b;
     background-size: cover;
-    padding: 0;
+    min-height: 300px;
+    padding: 40px 0;
 }
 
 .hero h1 {
@@ -83,7 +84,7 @@ header {
 .hero-header {
     width: 100%;
     padding: 100px;
-    min-height: 100vh;
+    min-height: auto;
     background-repeat: no-repeat;
     background-size: auto;
     background-position: top left;

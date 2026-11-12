@@ -1,107 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'career_hub/base.html' %}
 
-    {% load static %}
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UFT-8">
-        <title>DMOProductions.co.uk</title>
-        {% load static %}
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="{% static 'career_hub/css/style.css' %}">
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <section class="top-bar">
-                    {% load static %}
-                    <div class="logo-group">
-                        <img src="{% static 'career_hub/images/logos/DMO-2.png' %}" alt="DMO logo" width="75">
-                        <h1>DMOProductions.co.uk</h1>
-                    </div>
-                    <nav class="nav-links">
-                        <a href="#hero" class="nav-link">Home</a>
-                        <a href="#projects" class="nav-link">Projects</a>
-                        <a href="#about" class="nav-link">About</a>
-                        <a href="{% url 'career_hub:cv' %}" class="{% if request.resolver_match.url_name == 'cv' %}active{% endif %}">CV</a> <!-- request.resolver.match.url_name stores info about the view handling current request and marks it as 'active' -->
-                    </nav>
-                </section>
+{% block content %}
+    <section class="hero">
+        <div class="container">
+            <div class="hero-header">
+                <h2>I like typing on a keyboard and watching things happen.</h2>
+                <br>
+                <p>Oh yeah, also my name is</p>
+                <h1>Leon Davies</h1>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2>If you find portfolios interesting:</h2>
+                <a href="{% url 'career_hub:projects' %}"
+                    class="button"
+                    style="background-color: #aa875e;
+                    border: none;
+                    color: #4f1f23;
+                    padding: 15px 15px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;">
+                    See the result of my keyboard typing
+                </a>
+                
+
+                
+                
+
+                <br>
+                <br>
+                <h2>Or if PDF files with a French name are more up your alley:</h2>
+                <a href="{% url 'career_hub:cv' %}"
+                    class="button"
+                    style="background-color: #aa875e;
+                    border: none;
+                    color: #4f1f23;
+                    padding: 15px 15px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;">
+                    See the my <i><b>curriculum vitae</b></i> or <i><b>CV</b></i> in normal person language
+                </a>
+
             </div>
-        </header>
-        <section class="hero">
-            <div class="container">
-                <div class="hero-header">
-                    <h2>I like typing on a keyboard and watching things happen.</h2>
-                    <br>
-                    <p>Oh yeah, also my name is</p>
-                    <h1>Leon Davies</h1>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <h2>If you find portfolios interesting:</h2>
-                    <a href="{% url 'career_hub:projects' %}"
-                        class="button"
-                        style="background-color: #aa875e;
-                        border: none;
-                        color: #4f1f23;
-                        padding: 15px 15px;
-                        text-align: center;
-                        text-decoration: none;
-                        display: inline-block;
-                        font-size: 16px;
-                        margin: 4px 2px;
-                        cursor: pointer;">
-                        See the result of my keyboard typing
-                    </a>
-                    
-
-                    
-                    
-
-                    <br>
-                    <br>
-                    <h2>Or if PDF files with a French name are more up your alley:</h2>
-                    <a href="{% url 'career_hub:cv' %}"
-                        class="button"
-                        style="background-color: #aa875e;
-                        border: none;
-                        color: #4f1f23;
-                        padding: 15px 15px;
-                        text-align: center;
-                        text-decoration: none;
-                        display: inline-block;
-                        font-size: 16px;
-                        margin: 4px 2px;
-                        cursor: pointer;">
-                        See the my <i><b>curriculum vitae</b></i> or <i><b>CV</b></i> in normal person language
-                    </a>
-
-                </div>
-            </div>
-        </section>
-        <section id="projects" class="section animate-on-scroll">
-            <div class="container">
-                <h2>I have worked on a couple projects</h2>
-                <p>For example this website</p>
-            </div>
-        </section>
-        <section id="about" class="section animate-on-scroll">
-            <div class="container">
-                <h2>I program things</h2>
-                <p>Like this website</p>
-            </div>
-        </section>
-
-    </body>
+        </div>
+    </section>
+    <section id="projects" class="section animate-on-scroll">
+        <div class="container">
+            <h2>I have worked on a couple projects</h2>
+            <p>For example this website</p>
+        </div>
+    </section>
+    <section id="about" class="section animate-on-scroll">
+        <div class="container">
+            <h2>I program things</h2>
+            <p>Like this website</p>
+        </div>
+    </section>
     
-</html>
+{% endblock %}
 
 
 

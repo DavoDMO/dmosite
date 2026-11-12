@@ -1,12 +1,12 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
-    {% load static %}
+    
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UFT-8">
+        <meta charset="UTF-8">
         <title>DMOProductions.co.uk</title>
-        {% load static %}
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -16,11 +16,16 @@
         <header>
             <div class="container">
                 <section class="top-bar">
-                    {% load static %}
                     <div class="logo-group">
                         <img src="{% static 'career_hub/images/logos/DMO-2.png' %}" alt="DMO logo" width="75">
                         <h1>DMOProductions.co.uk</h1>
                     </div>
+                    <nav class="nav-links">
+                        <a href="{% url 'career_hub:home' %}" class="nav-link">Home</a>
+                        <a href="{% url 'career_hub:projects' %}" class="nav-link">Projects</a>
+                        <a href="{% url 'career_hub:about' %}" class="nav-link">About</a>
+                        <a href="{% url 'career_hub:cv' %}" class="{% if request.resolver_match.url_name == 'cv' %}active{% endif %}">CV</a> <!-- request.resolver.match.url_name stores info about the view handling current request and marks it as 'active' -->
+                    </nav>
                 </section>
             </div>
         </header>
